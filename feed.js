@@ -103,9 +103,7 @@ async function loadData() {
   const userData = await userRes.json();
 
   // 2. Get images from Unsplash
-  const imgRes = await fetch(
-    "https://api.unsplash.com/photos/random?count=9&client_id=YOUR_SECRET_KEY"
-  );
+  const imgRes = await fetch("/api/unsplash");
   const imgData = await imgRes.json();
 
   const container = document.querySelector(".users");
