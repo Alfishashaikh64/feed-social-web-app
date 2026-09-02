@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+</head>
+<body>  
+    <div class="nav navbar bg-white/80 backdrop-blur-xl border-b border-stone-20" style="margin: auto;display: flex;justify-content:space-between;">
+      <!-- mb-55 -->
+                <div class="flex items-center ml-6 p-2 space-x-2">
+                   <!-- ICON -->
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                      class="h-8 w-8 text-amber-500" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor" 
+                      stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" 
+                        d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <h1 class="text-gray-800 text-2xl font-bold">Feed<span class="text-amber-500">Core</span> </h1>
+                </div>
+                <div style="display:flex;justify-content:space-evenly" class="pr-38 pt-6">
+                <!-- <div class="flex justify-between items-center justify-content-center px-8 mr-64"> padding-right:710px;padding-top:22px;-->
+                    <div id="navHome" class="upbar pr-8 text-stone-900 cursor-pointer hover:text-amber-500 p-2 rounded-lg">
+                      Home
+                    </div> 
+                    <div id="navFeed" class="upbar text-stone-900 cursor-pointer hover:text-amber-500 p-2 rounded-lg">
+                      Feed
+                    </div>
+                    
+                </div>
+                <div>
+                      <button id="openRigester" class="bg-black text-white hover:bg-stone-600  font-bold py-2 px-4 rounded mr-4 mt-4 ">Register</button>
+                      <button id="openLogin" class=" bg-amber-500  hover:bg-amber-600 text-white font-bold py-2 px-4 rounded mr-8 mt-4">Login</button>
+
+                    </div>
+            
+    </div>
+    <section id="homepage" class="themed-bg backdrop-blur flex flex-col items-center justify-center text-center px-6 mt-8">
+      <div class="flex items-center ">
+        <div class="text-center max-w-6xl mx-auto">
+
+          <div class="inline-block text-sm bg-amber-200 rounded-lg p-2 text-semi-bold text-brown">✦ Social Feed Platform</div>
+          <h1 class="text-5xl font-bold mt-4 mb-4 text-gray-800 font-serif font-bold leading-tight">Share your <span class="text-amber-500">Moments</span> <br/> with the world!</h1>
+          <p class="text-lg text-gray-600 mx-w-md">FeedCore is a clean social feed where you post, explore and connect — no noise, just content.</p>
+          <div class="mt-6 flex justify-center gap-4">
+            <button id="heroExplore" class="bg-amber-500 text-xl hover:bg-amber-600 text-white font-bold py-2 px-4 rounded-lg">Explore Feed →</button>
+            <button id="heroRegister" class="text-xl bg-black hover:bg-stone-600 text-white font-bold py-2 px-4 rounded-lg">Join Now →</button>
+          </div>
+          <!-- features -->
+           <div class="features mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+            <div class="backdrop-blur-lg rounded-xl shadow-lg w-60 px-4 py-6 border border-gray-300">
+             <div class="text-3xl mb-1">📸</div>
+             <h3 class="text-xl font-bold text-stone-800">Post Anything</h3>
+             <p class="text-gray-800 mt-2">Share photos and thoughts with a simple post editor</p> 
+           </div>
+           <div class="backdrop-blur-lg rounded-xl shadow-lg w-60 px-4 py-6 border border-gray-300">
+            <div class="text-3xl mb-1">💬</div>
+            <h3 class="text-xl font-bold text-stone-800">Connect with Others</h3>
+            <p class="text-gray-800 mt-2">Engage with your community through comments and likes</p>
+           </div>
+           <div class="backdrop-blur-lg rounded-xl shadow-lg w-60 px-4 py-6 border border-gray-300">
+            <div class="text-3xl mb-1">🌙</div>
+            <h3 class="text-xl font-bold text-stone-800">Dark Mode</h3>
+            <p class="text-gray-800 mt-2">Switch to dark mode for a comfortable viewing experience at night</p>
+           </div>
+        </div>
+      </div>
+    </section>
+  <section id="feedpage">
+    <div class="mt-10 ml-10 mb-10">
+      <div class="text-3xl font-bold mb-4 text-gray-700">
+        Your Feed!
+      </div>
+      <div class="text-lg text-gray-600">
+       <p> customize your feed based on your interests and preferences.</p> 
+      </div>
+    </div>
+    <!-- class="w-64 border-rounded-lg border-2 border-gray-300 p-4 m-4 -->
+    <div class="flex min-h-screen">
+      <aside class="hidden lg:block w-64  flex-shrink-0 ml-10 mt-10 mr-10 mb-10">
+        <!-- min-h-screen -->
+          <div class="bg-white rounded-2xl p-6 sticky top-24 border border-stone-200 pr-8 pl-8 space-y-4 cursor-pointer h-full ">
+            <div class="mb-6 ">
+              <!-- bg-amber-500 p-2 rounded-lg -->
+              <h4 id="acc" class="text-stone-900 mb-3 hover:bg-amber-500 p-2 rounded-lg">Account</h4>
+          </div>  
+            <div class="mb-6">
+              <h4 class="CP text-stone-900 mb-3 hover:hover:bg-amber-500 p-2 rounded-lg">Create Post</h4>
+              <!-- upload+ -->
+            </div>
+            <div class="mb-6">
+              <h4 class="text-semi-bold mb-3 hover:bg-amber-500 p-2 rounded-lg">Share</h4>
+            </div>
+            <div class="mb-6">
+              <h4 id="notif" class="text-stone-900 mb-3 hover:bg-amber-500 p-2 rounded-lg">Notifications</h4>
+
+              <div id="notificationContainer" class="fixed inset-0 bg-white/90 backdrop-blur hidden p-6  gap-2"></div>
+            </div>
+            <div class="mb-6">
+              <h4 class="text-stone-900 mb-3 hover:bg-amber-500 p-2 rounded-lg">Explore Users</h4>
+            </div>
+            <div class="mb-6">
+              <h4 class="text-stone-900 mb-3 hover:bg-amber-500 p-2 rounded-lg">Messages</h4>
+            </div>
+            <div class="mb-6">
+              <h4 class="text-stone-900 mb-3 hover:bg-amber-500 p-2 rounded-lg">Theme Toggle</h4>
+            </div>
+            <div class="mb-6">
+              <h4 class="text-stone-900 mb-3 hover:bg-amber-500 p-2 rounded-lg">Settings</h4>
+            </div>
+
+          </div>
+      </aside>
+          <!-- create post pop -->
+      <div id="modal2" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-6 ">
+        <div class="bg-white rounded-xl p-6 max-w-lg w-full h-full overflow-hidden  ">
+          <div class="max-h-[85vh] overflow-y-auto p-6 relative">
+          <button onclick="closeModal('modal2')" class="absolute top-2 right-3 text-xl">✖</button>
+          <div id="contofCP">
+          
+          <h2 class="text-3xl font-bold mb-4 text-gray-700 text-center tracking-tight">Create Post</h2>
+
+          <p class="text-gray-500 mb-6 text-center">Below detail are necessary for creating a new post.</p>
+          <form autocomplete="off" id="form">
+            <label for="myloc" class="block text-gray-700 font-bold mb-2">Location:</label>
+            <input type="text" id="myloc" name="myloc" class="w-full border border-gray-300 rounded-lg p-2 mb-4">
+            
+            <label for="content" class="block text-gray-700 font-bold mb-2">Content:</label>
+            <textarea id="content" name="content" class="w-full border border-gray-300 rounded-lg p-2 mb-4" rows="4"></textarea>
+
+            <label for="image" class="block text-gray-700 font-bold mb-2">Image:</label>
+            <input type="url" id="image" name="image" class="w-full border border-gray-300 rounded-lg p-2 mb-4">
+
+            <div class="justify-center flex mt-4">
+            <button type="submit" class="bg-amber-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-amber-600">Submit</button></div>
+          </form>
+          </div>
+           </div>
+          </div>
+        </div>
+            <main id="main" class="flex-1 p-6">
+              <!-- ml-64 -->
+              <div class="users grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+                <!-- max-w-11xlmt-0 max-w-11xl --> 
+              </div>
+              <div class="uform grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+
+              </div>
+
+            </main>
+     </div></section>
+     <!-- //Zomming modal for post content -->
+     <div id="modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-xl p-6 max-w-lg w-full relative">
+
+    <button onclick="closeModal('modal')" class="absolute top-2 right-3 text-xl">✖</button>
+
+    <div id="modalContent"></div>
+
+  </div>
+</div>
+<div id="registermodel" class=" fixed inset-0 bg-white/90 backdrop-blur hidden p-6  gap-2">
+       <button onclick="closeModal('registermodel')" class="absolute top-2 left-3 text-2xl font-bold">❮ Back</button>
+        <div>
+          <img src="https://plus.unsplash.com/premium_vector-1759965562656-8bd9333ae9c2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHJlZ2lzdHJhdGlvbnxlbnwwfHwwfHx8MA%3D%3D" class="w-full h-full rounded-lg object-cover hidden lg:block align-left mx-10 ml-32" alt="register image">
+        </div>
+        <div class="bg-white rounded-xl p-6 max-w-lg w-full  mx-auto overflow-hidden border border-stone-200 align-right">
+          <div class="max-h-[85vh]  p-6 ">
+            <!-- overflow-y-autorelative -->
+          
+          <div id="contofreg">
+          
+            <h2 class="text-4xl font-bold mb-4 text-stone-700 text-center tracking-tight">Register</h2>
+
+            <p class="text-gray-500 mb-6 text-center text-semibold">Below detail are necessary for registration.</p>
+            <form autocomplete="off" id="regform">
+            <label class="block font-bold mb-2">Username:</label>
+              <input id="regusername" type="text" class="w-full border p-2 mb-4 border-gray-900 rounded-lg">
+
+              <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+              <input type="email" id="regemail" name="email" class="w-full border border-gray-300 rounded-lg p-2 mb-4 border-gray-900 rounded-lg">
+              
+              
+              <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
+              <input type="password" id="regpassword" name="password" class="w-full border border-gray-300 rounded-lg p-2 mb-4 border-gray-900 rounded-lg">
+
+              <label for="profilepic" class="block text-gray-700 font-bold mb-2">Profile Picture URL:</label>
+              <input type="url" id="profilepic" name="profilepic" class="w-full border border-gray-900 rounded-lg p-2 mb-4 ">
+              <div class="justify-center flex mt-2">
+              <button type="submit" class="bg-amber-500 text-white font-bold py-2 px-4 rounded-lg align-center mt-4 hover:bg-amber-600">Sign Up</button></div></form>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div id="loginmodel"  class=" fixed inset-0  backdrop-blur hidden items-center justify-center z-50 p-6" >
+        <div class="bg-white rounded-xl p-4 max-w-96 w-full overflow-hidden border-4 border-stone-500 ">
+          
+          <div class="max-h-[80vh] overflow-y-auto p-4 relative">
+          <button onclick="closeModal('loginmodel')" class="absolute top-2 right-3 text-xl">✖</button>
+          <div id="contoflog">
+          
+          <h2 class="text-4xl font-bold mb-2 text-gray-900 text-center tracking-tight">Login</h2>
+
+          <p class="text-gray-500 mb-4 text-center">Below detail are necessary for login.</p>
+          <form autocomplete="off" id="loginform">
+          <label class="block text-gray-700 font-bold mb-auto">Username:</label>
+            <input id="logusername" type="text" class="w-80 border border-gray-500 rounded-lg p-2 mb-2 focus:outline-none focus:ring-2 focus:ring-gray-600">
+
+            <label for="password" class="block text-gray-700 font-bold mb-auto">Password:</label>
+            <input type="password" id="logpassword" name="password" class="w-80 border border-gray-500 rounded-lg p-2 mb-2 focus:outline-none focus:ring-2 focus:ring-gray-600">
+          
+            <div class="justify-center flex mt-2">
+            <button type="submit" class="bg-amber-500 text-white text-lg font-bold p-2 rounded-lg hover:bg-amber-600">Submit</button></div></form>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  <div id="accountmodel" class="fixed inset-0 bg-white/80 backdrop-blur hidden p-6  gap-2 ">
+    <button onclick="closeModal('accountmodel')" class="absolute top-2 left-3 text-2xl font-bold">❮ Back</button>
+    <div class="bg-white rounded-2xl p-6 max-w-6xl w-full  mx-auto overflow-hidden border border-stone-200 align-right">
+      <div class="max-h-[85vh]  p-6 ">
+        <div id="accountcontent" class="overflow-y-auto h-[80vh] flex flex-col items-center gap-6 max-w-6xl ">
+              <!-- overflow-y-autorelative -->
+               
+        </div>
+      </div>
+    </div>
+    </div> 
+<div class="fixed parent p-10 flex flex-col gap-4 items-start">
+
+</div>
+
+                    
+ <script src="feed.js"></script>
+    
+  </body>
+  </html>
+
+
+

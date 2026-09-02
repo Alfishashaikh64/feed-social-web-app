@@ -1,0 +1,18 @@
+.upbar{
+    color: #696868;
+    font-size:14px;
+    font-family:arial;
+    font-weight:3px;
+    cursor: pointer;
+
+}
+.navbar{
+    background-color:#fff;
+    box-shadow: 2px 1px 2px #c2c2c2;
+    margin: 0px;   
+}
+
+.hide{
+    display: none;
+}
+
